@@ -1,17 +1,8 @@
-public class ArrayCopier {
+public class ArrayCopierx {
 	private int[] firstArray;
 	private int[] secondArray;
 	
-	public ArrayCopier(){
-		firstArray = new int[2];
-		firstArray[0] = 1;
-		firstArray[1] = 2;
-		secondArray = new int[4];
-		secondArray[0] = 3;
-		secondArray[1] = 4;
-		secondArray[2] = 5;
-		secondArray[3] = 6;	
-	}
+	
 	public void copy(int[] src, int[] dst){
 		int srcLength = src.length;
 		int dstLength = dst.length;		
@@ -44,22 +35,21 @@ public class ArrayCopier {
 		int[] firstArray;
 		int[] secondArray;
 
-		firstArray = new int[7];
+		firstArray = new int[4];
 		firstArray[0] = 1;
 		firstArray[1] = 2;
 		firstArray[2] = 2;
 		firstArray[3] = 2;
-		firstArray[4] = 2;
-		firstArray[5] = 2;
-		firstArray[6] = 2;
 		
-		secondArray = new int[4];
+		secondArray = new int[6];
 		secondArray[0] = 3;
 		secondArray[1] = 4;
 		secondArray[2] = 5;
 		secondArray[3] = 6;	
+		secondArray[4] = 7;
+		secondArray[5] = 8;
 		
-		ArrayCopier copier = new ArrayCopier();
+		ArrayCopierx copier = new ArrayCopierx();
 		
 			copier.copy(firstArray, secondArray);
 			int counter = 0;
